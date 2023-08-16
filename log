@@ -254,3 +254,14 @@ exercises.c:50:8: note: previous definition of ‘pares’ was here
       |        ^~~~~
 Compilation failed
 56ee6b9
+Wed 16 Aug 2023 03:47:26 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:7: error: unused variable ‘talla’ [-Werror=unused-variable]
+   49 |   int talla = *newSize;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e543da1
