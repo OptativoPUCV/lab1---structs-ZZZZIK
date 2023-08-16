@@ -201,3 +201,20 @@ exercises.c:56:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 8c71040
+Wed 16 Aug 2023 03:38:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:56:16: error: expected expression before ‘]’ token
+   56 |   return pares[];
+      |                ^
+exercises.c:50:7: error: variable ‘pares’ set but not used [-Werror=unused-but-set-variable]
+   50 |   int pares[talla],j=0;
+      |       ^~~~~
+exercises.c:58:1: error: control reaches end of non-void function [-Werror=return-type]
+   58 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ed811fb
