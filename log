@@ -15,3 +15,14 @@ Tue 15 Aug 2023 07:05:55 AM UTC:
  tests:  0|6
 total_score: 10/70
 cf14bb7
+Wed 16 Aug 2023 02:20:23 AM UTC: 
+ exercises.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:16: error: expected ‘:’ before ‘;’ token
+   34 |     temp?arr[i];
+      |                ^
+      |                :
+Compilation failed
+202a3a2
