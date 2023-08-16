@@ -168,3 +168,14 @@ exercises.c:54:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 a51c4e4
+Wed 16 Aug 2023 03:36:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   54 |   return *pares;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f537c17
