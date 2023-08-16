@@ -121,3 +121,25 @@ exercises.c:56:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 8adc315
+Wed 16 Aug 2023 03:34:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:13: error: ‘newsize’ undeclared (first use in this function); did you mean ‘newSize’?
+   48 |   int pares[newsize],j=0;
+      |             ^~~~~~~
+      |             newSize
+exercises.c:48:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:48:22: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable]
+   48 |   int pares[newsize],j=0;
+      |                      ^
+exercises.c:48:7: error: unused variable ‘pares’ [-Werror=unused-variable]
+   48 |   int pares[newsize],j=0;
+      |       ^~~~~
+exercises.c:56:1: error: control reaches end of non-void function [-Werror=return-type]
+   56 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9930c12
