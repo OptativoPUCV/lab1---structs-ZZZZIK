@@ -229,3 +229,9 @@ exercises.c:53:15: error: ‘j’ undeclared (first use in this function)
 exercises.c:53:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a643b7a
+Wed 16 Aug 2023 03:41:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+045f140
