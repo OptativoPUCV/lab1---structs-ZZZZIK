@@ -293,3 +293,16 @@ exercises.c:48:8: note: previous declaration of ‘pares’ was here
       |        ^~~~~
 Compilation failed
 5568b69
+Wed 16 Aug 2023 03:56:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:8: error: redeclaration of ‘pares’ with no linkage
+   50 |   int *pares = (int *)malloc(*newSize * sizeof(int));
+      |        ^~~~~
+exercises.c:48:8: note: previous declaration of ‘pares’ was here
+   48 |   int *pares;
+      |        ^~~~~
+Compilation failed
+b276612
