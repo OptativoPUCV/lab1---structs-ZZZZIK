@@ -51,7 +51,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         pares[j]=arr[i];
       }
   }
-  return *pares; 
+  return pares; 
 
 }
 
