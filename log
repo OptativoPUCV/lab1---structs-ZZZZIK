@@ -241,3 +241,16 @@ Wed 16 Aug 2023 03:42:07 PM UTC:
  tests:  0|5
 total_score: 20/70
 132b98a
+Wed 16 Aug 2023 03:43:46 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:51:8: error: redefinition of ‘pares’
+   51 |   int *pares= malloc(talla*sizeof(int));
+      |        ^~~~~
+exercises.c:50:8: note: previous definition of ‘pares’ was here
+   50 |   int *pares = NULL;
+      |        ^~~~~
+Compilation failed
+56ee6b9
