@@ -277,3 +277,19 @@ Wed 16 Aug 2023 03:52:25 PM UTC:
  tests:  0|5
 total_score: 20/70
 1e82ae8
+Wed 16 Aug 2023 03:56:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:8: error: array size missing in ‘pares’
+   48 |   int *pares[];
+      |        ^~~~~
+exercises.c:50:8: error: conflicting types for ‘pares’
+   50 |   int *pares = (int *)malloc(*newSize * sizeof(int));
+      |        ^~~~~
+exercises.c:48:8: note: previous declaration of ‘pares’ was here
+   48 |   int *pares[];
+      |        ^~~~~
+Compilation failed
+5568b69
