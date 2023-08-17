@@ -358,3 +358,38 @@ exercises.c:124:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 9e36626
+Thu 17 Aug 2023 04:28:41 AM UTC: 
+ exercises.c | 58 ++++++++++++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 48 insertions(+), 10 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:107:3: error: unknown type name ‘bool’
+  107 |   bool ascen = true;
+      |   ^~~~
+exercises.c:107:16: error: ‘true’ undeclared (first use in this function)
+  107 |   bool ascen = true;
+      |                ^~~~
+exercises.c:107:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:108:3: error: unknown type name ‘bool’
+  108 |   bool decen = true;
+      |   ^~~~
+exercises.c:110:19: error: ‘copia’ undeclared (first use in this function)
+  110 |   for (int i=0; i<copia; i++){
+      |                   ^~~~~
+exercises.c:112:25: error: statement with no effect [-Werror=unused-value]
+  112 |     copia_descendente[i]==arr[i];
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+exercises.c:138:15: error: ‘false’ undeclared (first use in this function); did you mean ‘fclose’?
+  138 |       ascen = false;
+      |               ^~~~~
+      |               fclose
+exercises.c:146:7: error: ‘acen’ undeclared (first use in this function); did you mean ‘ascen’?
+  146 |   if (acen) return 1;
+      |       ^~~~
+      |       ascen
+exercises.c:162:1: error: control reaches end of non-void function [-Werror=return-type]
+  162 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6f59d91

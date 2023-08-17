@@ -99,24 +99,62 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
-  0 si no está ordenado, y -1 si está ordenado en orden descendente.
+  0 si no está ordenado, y -1 si está ordenado en orden .
 */
-int checkSorted(int arr[], int size) { 
-  int copia[]==arr[];
+int checkSorted(int arr[], int size) {
+  int copia_ascendente[size];
+  int copia_descendente[size];
+  bool ascen = true;
+  bool decen = true;
+  // Hacemos 2 copias
+  for (int i=0; i<copia; i++){
+    copia_ascendente[i]=arr[i];
+    copia_descendente[i]==arr[i];
+  }
+  // Ordenamos la copia ascendente
   for(int i=0 ;i<size ;i++){
         for(int j=0 ;j<size-1 ;j++){
-            if(arr[j]>arr[j+1]){
-                int temp = arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]= temp;
+            if(copia_ascendente[j]>copia_ascendente[j+1]){
+                int temp = copia_ascendente[j];
+                copia_ascendente[j]=copia_ascendente[j+1];
+                copia_ascendente[j+1]= temp;
             }
         }
   }
-  if (copia[]==arr[]){
-    return 1;
+  // Ordenamos la copia decendiente
+  for(int i=0 ;i<size ;i++){
+        for(int j=0 ;j<size-1 ;j++){
+            if(copia_descendente[j]<copia_descendente[j+1]){
+                int temp = copia_descendente[j];
+                copia_descendente[j]=copia_descendente[j+1];
+                copia_descendente[j+1]= temp;
+            }
+        }
   }
-  else{
-    return -1;
+
+  // Comparamos para saber que es finalmente
+  for (int i=0; i<size;i++){
+    if (copia_ascendente[i]!=arr[i]){
+      ascen = false;
+    }else if(copia_descendente[i]!=arr[i]){
+      decen = false;
+    }if ((ascen==false) && (decen==false)){
+      return 0;
+    }
+  }
+  
+  if (acen) return 1;
+  if (decen) return -1;
+  
+  
+  
+  
+  
+  
+  for (int k=0; k<size; k++){
+    if (copia[k]!=arr[k]); //es decendente o malo
+
+    
   }
   
   
