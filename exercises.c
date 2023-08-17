@@ -131,11 +131,8 @@ int checkSorted(int arr[], int size) {
 
   // Comparamos para saber que es finalmente
   for (int i=0; i<size;i++){
-    if (copia_ascendente[i]!=arr[i]){
-      ascen = 0;
-    }else if(copia_descendente[i]!=arr[i]){
-      decen = 0;
-    }
+    if (copia_ascendente[i]!=arr[i]) ascen = 0;
+    if (copia_descendente[i]!=arr[i]) decen = 0;
   }
   if ((ascen==0) && (decen==0)){
       return 0;
