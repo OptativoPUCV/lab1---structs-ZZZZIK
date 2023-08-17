@@ -104,8 +104,10 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) {
   int copia_ascendente[size];
   int copia_descendente[size];
-  bool ascen = true;
-  bool decen = true;
+  
+  // Flags
+  int ascen = 1;
+  int decen = 1;
   // Hacemos 2 copias
   for (int i=0; i<copia; i++){
     copia_ascendente[i]=arr[i];
@@ -135,16 +137,16 @@ int checkSorted(int arr[], int size) {
   // Comparamos para saber que es finalmente
   for (int i=0; i<size;i++){
     if (copia_ascendente[i]!=arr[i]){
-      ascen = false;
+      ascen = 0;
     }else if(copia_descendente[i]!=arr[i]){
-      decen = false;
-    }if ((ascen==false) && (decen==false)){
+      decen = 0;
+    }if ((ascen==0) && (decen==0)){
       return 0;
     }
   }
   
-  if (acen) return 1;
-  if (decen) return -1;
+  if (acen==1) return 1;
+  if (decen==1) return -1;
 
   
   
