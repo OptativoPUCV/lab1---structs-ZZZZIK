@@ -109,7 +109,7 @@ int checkSorted(int arr[], int size) {
   // Hacemos 2 copias
   for (int i=0; i<copia; i++){
     copia_ascendente[i]=arr[i];
-    copia_descendente[i]==arr[i];
+    copia_descendente[i]=arr[i];
   }
   // Ordenamos la copia ascendente
   for(int i=0 ;i<size ;i++){
@@ -145,17 +145,7 @@ int checkSorted(int arr[], int size) {
   
   if (acen) return 1;
   if (decen) return -1;
-  
-  
-  
-  
-  
-  
-  for (int k=0; k<size; k++){
-    if (copia[k]!=arr[k]); //es decendente o malo
 
-    
-  }
   
   
 
