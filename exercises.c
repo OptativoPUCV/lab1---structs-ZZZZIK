@@ -117,19 +117,14 @@ int checkSorted(int arr[], int size) {
   for(int i=0 ;i<size ;i++){
         for(int j=0 ;j<size-1 ;j++){
             if(copia_ascendente[j]>copia_ascendente[j+1]){
-                int temp = copia_ascendente[j];
+                int temp1 = copia_ascendente[j];
                 copia_ascendente[j]=copia_ascendente[j+1];
-                copia_ascendente[j+1]= temp;
+                copia_ascendente[j+1]= temp1;
             }
-        }
-  }
-  // Ordenamos la copia decendiente
-  for(int i=0 ;i<size ;i++){
-        for(int j=0 ;j<size-1 ;j++){
             if(copia_descendente[j]<copia_descendente[j+1]){
-                int temp = copia_descendente[j];
+                int temp2 = copia_descendente[j];
                 copia_descendente[j]=copia_descendente[j+1];
-                copia_descendente[j+1]= temp;
+                copia_descendente[j+1]= temp2;
             }
         }
   }
@@ -147,10 +142,9 @@ int checkSorted(int arr[], int size) {
   }
   if (ascen==1) return 1;
   if (decen==1) return -1;
-
-  
-  
 }
+
+
 
 
 
