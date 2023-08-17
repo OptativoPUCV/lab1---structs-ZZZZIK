@@ -163,7 +163,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
     strcpy(libro->titulo,titulo);
     strcpy(libro->autor.nombre,nombreAutor);
     libro->autor.anioNacimiento= anioNacimiento;
-    libro->anioPublicacion= anioPublicacion;
+    libro->anioPublicacion= anioPublicacion;   
 }
 
 /*
@@ -182,4 +182,6 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { 
+  
+  return NULL; }
