@@ -109,7 +109,7 @@ int checkSorted(int arr[], int size) {
   int ascen = 1;
   int decen = 1;
   // Hacemos 2 copias
-  for (int i=0; i<copia; i++){
+  for (int i=0; i<size; i++){
     copia_ascendente[i]=arr[i];
     copia_descendente[i]=arr[i];
   }

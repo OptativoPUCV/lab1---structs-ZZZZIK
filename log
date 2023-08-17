@@ -444,3 +444,19 @@ exercises.c:154:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 e038a94
+Thu 17 Aug 2023 04:31:55 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:148:7: error: ‘acen’ undeclared (first use in this function); did you mean ‘ascen’?
+  148 |   if (acen==1) return 1;
+      |       ^~~~
+      |       ascen
+exercises.c:148:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+  154 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b9e2253
