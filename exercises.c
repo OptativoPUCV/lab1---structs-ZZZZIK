@@ -140,18 +140,18 @@ int checkSorted(int arr[], int size) {
       ascen = 0;
     }else if(copia_descendente[i]!=arr[i]){
       decen = 0;
-    }if ((ascen==0) && (decen==0)){
-      return 0;
     }
   }
-  
+  if ((ascen==0) && (decen==0)){
+      return 0;
+  }
   if (ascen==1) return 1;
   if (decen==1) return -1;
 
   
   
-
 }
+
 
 
 
