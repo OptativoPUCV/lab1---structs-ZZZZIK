@@ -557,3 +557,30 @@ exercises.c:140:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 f85b638
+Thu 17 Aug 2023 08:50:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:163:18: error: ‘libro’ redeclared as different kind of symbol
+  163 |     struct Libro libro;
+      |                  ^~~~~
+exercises.c:162:30: note: previous definition of ‘libro’ was here
+  162 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion){
+      |                       ~~~~~~~^~~~~
+exercises.c:163:18: error: storage size of ‘libro’ isn’t known
+  163 |     struct Libro libro;
+      |                  ^~~~~
+exercises.c:164:24: error: request for member ‘Libro’ in something not a structure or union
+  164 |     strcpy(libro,titulo.Libro);
+      |                        ^
+exercises.c:163:18: error: unused variable ‘libro’ [-Werror=unused-variable]
+  163 |     struct Libro libro;
+      |                  ^~~~~
+exercises.c: In function ‘checkSorted’:
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9bb2970
