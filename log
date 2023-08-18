@@ -744,3 +744,30 @@ exercises.c:140:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 c9c6054
+Fri 18 Aug 2023 03:01:39 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:188:3: error: invalid type argument of unary ‘*’ (have ‘Nodo’ {aka ‘struct nodo’})
+  188 |   *aux= malloc(size*sizeof(Nodo));
+      |   ^~~~
+exercises.c:191:10: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  191 |       aux->numero=arr[i];
+      |          ^~
+exercises.c:192:10: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  192 |       aux->siguiente=NULL;
+      |          ^~
+exercises.c:194:10: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  194 |       aux->numero=arr[i];
+      |          ^~
+exercises.c:195:10: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  195 |       aux->siguiente=arr[i+1];
+      |          ^~
+exercises.c: In function ‘checkSorted’:
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+944dc79
