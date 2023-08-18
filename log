@@ -797,3 +797,14 @@ exercises.c:140:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 1bbb70a
+Fri 18 Aug 2023 03:04:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6592b59
