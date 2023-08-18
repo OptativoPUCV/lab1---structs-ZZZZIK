@@ -198,7 +198,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
       nodoAux->siguiente = nodo;
       nodoAux = nodo;
     }
-  }
+  
     
     
     
