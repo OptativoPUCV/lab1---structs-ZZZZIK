@@ -183,20 +183,23 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) { 
-  Nodo *aux;
-
-  *aux= malloc(size*sizeof(Nodo));
+  Nodo *lista1=NULL,*lista2=NULL;
+  
   for(int i=0; i<size; i++){
-    if (i==size-1){
-      aux->numero=arr[i];
-      aux->siguiente=NULL;
-    }else{
-      aux->numero=arr[i];
- //   aux->siguiente=arr[i+1];
-
+    Nodo *nodo;
+    nodo= malloc(sizeof(Nodo));
+    nodo->numero=arr[i];
+    if (i == 0) {
+      lista = nodo;
+    } else {
+      nodoAux->siguiente = nodo;
     }
+
+    nodoAux = nodo;
+  }
+    
+    
     
   }
-  
-  return aux; 
+  return lista1; 
 }
