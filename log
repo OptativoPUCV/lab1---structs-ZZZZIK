@@ -861,3 +861,34 @@ exercises.c:203:3: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 4b8b823
+Fri 18 Aug 2023 03:40:00 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:193:7: error: ‘lista’ undeclared (first use in this function); did you mean ‘lista1’?
+  193 |       lista = nodo;
+      |       ^~~~~
+      |       lista1
+exercises.c:193:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:186:9: error: unused variable ‘lista1’ [-Werror=unused-variable]
+  186 |   Nodo *lista1=NULL,*nodoAux=NULL;
+      |         ^~~~~~
+exercises.c: At top level:
+exercises.c:204:3: error: expected identifier or ‘(’ before ‘return’
+  204 |   return lista1;
+      |   ^~~~~~
+exercises.c:205:1: error: expected identifier or ‘(’ before ‘}’ token
+  205 | }
+      | ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:203:3: error: control reaches end of non-void function [-Werror=return-type]
+  203 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+ad46854
