@@ -188,8 +188,11 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   
   for(int i = 0; i < size; i++) {
     Nodo *nodo = malloc(sizeof(Nodo));
+    if (nodo==NULL){
+      exit(EXIT_FAILURE);
+    }
     nodo->numero = arr[i];
-    nodo->siguiente = NULL; // Inicializar el puntero siguiente
+    nodo->siguiente = NULL; 
     
     if (i == 0) {
       lista = nodo;
