@@ -189,13 +189,15 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     Nodo *nodo;
     nodo= malloc(sizeof(Nodo));
     nodo->numero=arr[i];
-    if (i == 0) {
+    
+    
+  if (i == 0) {
       lista = nodo;
+      nodoAux = nodo;
     } else {
       nodoAux->siguiente = nodo;
+      nodoAux = nodo;
     }
-
-    nodoAux = nodo;
   }
     
     
