@@ -771,3 +771,18 @@ exercises.c:140:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 944dc79
+Fri 18 Aug 2023 03:02:02 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:21: error: assignment to ‘struct nodo *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  195 |       aux->siguiente=arr[i+1];
+      |                     ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6e8b437

@@ -183,9 +183,9 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) { 
-  Nodo aux;
+  Nodo *aux;
 
-  *aux= malloc(size*sizeof(Nodo));
+  aux= malloc(size*sizeof(Nodo));
   for(int i=0; i<size; i++){
     if (i==size-1){
       aux->numero=arr[i];
